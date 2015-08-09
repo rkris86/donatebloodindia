@@ -1,0 +1,74 @@
+<resources>
+
+<string name="app_name">Blood App</string>
+<string name="register_loader_name">Register Loader</string>
+<string name="hello_world">Hi krishna world!</string>
+<string name="action_settings">Settings</string>
+<string name="donor_first_name_hint">First Name</string>
+<string name="donor_last_name_hint">Last Name</string>
+<string name="action_search">Search</string>
+<string name="action_logout">Logout</string>
+<string name="action_forgot_password">Forgot Password</string>
+    <string name="donor_login_message_firstlogin">Login</string>
+    <string name="donor_password_firstlogin">password</string>
+<string name="action_myprofile">My profile</string>
+<string name="registration_notification">Get Notifications</string>
+<string name="donor_mobile_hint">Mobile Eg: 9900112233</string>
+
+<string name="search_results">Search Results</string>
+<color name="main_background_color">#F95555</color>
+<color name="main_text_color">#FFFFFF</color>
+
+<string name="settings_pagename">Settings </string>
+
+<string name="donor_login_message">Welcome to Blood Donation App</string>
+<string name="donor_blood_choose">Select your Blood group</string>
+<string name="donor_city_choose">Select your City </string>
+<string name="donor_sex_choose">Select your Gender </string>
+
+<string-array name="donor_city">
+    <item>Mumbai</item>
+    <item>Hyderabad</item>
+    <item>Bangalore</item>
+    <item>Delhi</item>
+    <item>Chennai</item>
+
+</string-array>
+<string-array name="donor_blood_group">
+    <item>O+ve</item>
+    <item>O-ve</item>
+    <item>A+ve</item>
+    <item>A-ve</item>
+    <item>B+ve</item>
+    <item>B-ve</item>
+    <item>AB+ve</item>
+    <item>AB-ve</item>
+</string-array>
+
+<string name="title_activity_register_loader">RegisterLoader</string>
+<string name="title_activity_search">Search</string>
+<string name="title_activity_register_loader_activity">BloodApp</string>
+<string name="title_activity_login_loader_activity">BloodApp</string>
+
+<string name="bloodbank">Blood Bank</string>
+<string name="donors">Donor</string>
+<string name="title_activity_search_activity1">SearchActivity1</string>
+<string name="title_activity_searhtest">Searhtest</string>
+<string name="title_section1">Section 1</string>
+<string name="title_section2">Section 2</string>
+<string name="title_section3">Section 3</string>
+<string name="title_activity_home_main">HomeMainActivity</string>
+<string name="title_basic_details">My Details</string>
+
+<color name="Black_color">#000000</color>
+<color name="White_color">#ffffff</color>
+
+<color name="button_background_color">#f48787</color>
+<color name="button_pressed_background_color">#f95555</color>
+
+    <color name="bloodapp_theme_color">#f95555</color>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

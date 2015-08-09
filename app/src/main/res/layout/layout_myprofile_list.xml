@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:padding="5dp"
+
+    android:background="@color/White_color" >
+
+    <ImageView
+        android:id="@+id/myprofileDividerview"
+        android:src="@android:drawable/divider_horizontal_dim_dark"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+
+        android:layout_below="@+id/myprofileBloodBanktextview"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/myprofileLocationtextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/myprofileBloodBanktextview"
+        android:layout_below="@+id/myprofileDividerview"
+        android:layout_marginTop="7dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Location"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/myprofile_hemoglobin_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/myprofileHemoglobintextview"
+        android:layout_alignBottom="@+id/myprofileHemoglobintextview"
+        android:layout_alignLeft="@+id/myprofile_plalelets_text"
+        android:text="Hemoglobin count"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/Black_color" />
+
+    <TextView
+        android:id="@+id/myprofileHemoglobintextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/myprofilePlaleletstextview"
+        android:layout_below="@+id/myprofilePlaleletstextview"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Hemoglobin"
+        android:textColor="@color/Black_color" />
+
+    <TextView
+        android:id="@+id/myprofileBloodBanktextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Bloodbank"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/myprofileDatetextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/myprofileLocationtextview"
+        android:text="Date"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/Black_color" />
+
+    <TextView
+        android:id="@+id/myprofileCommatextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/myprofileLocationtextview"
+        android:layout_alignBottom="@+id/myprofileLocationtextview"
+        android:layout_toRightOf="@+id/myprofileLocationtextview"
+        android:layout_marginLeft="2dp"
+        android:text=","
+        android:textColor="@color/Black_color" />
+
+    <TextView
+        android:id="@+id/myprofileCitytextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/myprofileLocationtextview"
+        android:layout_alignBottom="@+id/myprofileLocationtextview"
+        android:layout_toRightOf="@+id/myprofileCommatextview"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginLeft="4dp"
+        android:text="City"
+        android:textColor="@color/Black_color" />
+
+    <TextView
+        android:id="@+id/myprofile_plalelets_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/myprofile_hemoglobin_text"
+        android:layout_alignLeft="@+id/myprofileDatetextview"
+        android:text="Plalelets Count "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/Black_color" />
+
+    <TextView
+        android:id="@+id/myprofilePlaleletstextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myprofileDatetextview"
+        android:layout_marginLeft="27dp"
+        android:layout_toRightOf="@+id/myprofile_hemoglobin_text"
+        android:text="Plalelets"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/Black_color" />
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/main_background_color" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_margin="5dp"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/mybasicprofile_detail_name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/mybasicprofile_detail_email_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mybasicprofile_detail_bloodgroup_textview"
+        android:layout_below="@+id/mybasicprofile_detail_bloodgroup_textview"
+        android:text="No Email id"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/Black_color" />
+
+    <TextView
+        android:id="@+id/mybasicprofile_detail_bloodgroup_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mybasicprofile_detail_name_textview"
+        android:layout_below="@+id/mybasicprofile_detail_location_textview"
+        android:text="Bloodgroup"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/Black_color" />
+
+    <TextView
+        android:id="@+id/mybasicprofile_detail_location_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mybasicprofile_detail_bloodgroup_textview"
+        android:layout_below="@+id/mybasicprofile_detail_name_textview"
+        android:text="Location"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/mybasicprofile_detail_city_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mybasicprofile_detail_bloodgroup_textview"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/mybasicprofile_detail_email_textview"
+        android:text="City"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/Black_color" />
+
+    <Button
+        android:id="@+id/mybasicprofile_detail_donation_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mybasicprofile_detail_email_textview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="Show My donation reports"
+        android:background="@drawable/button_custom"
+        android:onClick="showMyDonationReports"/>
+
+</RelativeLayout>
+
+</RelativeLayout>

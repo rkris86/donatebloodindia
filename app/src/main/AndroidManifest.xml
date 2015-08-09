@@ -1,0 +1,148 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.donatebloodindia.bloodapp">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="20" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission android:name="in.donatebloodindia.bloodapp.gcm.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="in.donatebloodindia.bloodapp.gcm.permission.C2D_MESSAGE" />
+
+    <application android:allowBackup="true"
+        android:name="in.donatebloodindia.bloodapp.BloodApplicationGlobalVariables"
+        android:icon="@drawable/bloodappicon"
+        android:label="@string/app_name"
+        android:theme="@style/MyTheme" >
+
+        <activity
+            android:name="in.donatebloodindia.bloodapp.ActivityFirstLogin"
+            android:screenOrientation="portrait"
+
+            android:label="@string/title_activity_login_loader_activity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="in.donateblood.bloodapp.gcm" />
+            </intent-filter>
+
+        </receiver>
+
+        <service
+            android:name="in.donatebloodindia.bloodapp.MyGcmListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+
+
+        <service android:name="in.donatebloodindia.bloodapp.RegistrationIntentService"
+            android:exported="false" >
+        </service>
+
+
+
+
+
+        <activity
+            android:name="in.donatebloodindia.bloodapp.MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+
+        </activity>
+
+        <activity
+            android:name="in.donatebloodindia.bloodapp.RegisterLoaderActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_register_loader_activity" >
+
+        </activity>
+
+        <activity
+            android:name="in.donatebloodindia.bloodapp.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:screenOrientation="portrait"
+            android:parentActivityName="in.donatebloodindia.bloodapp.MainActivity" >
+
+        </activity>
+
+        <activity
+            android:name="in.donatebloodindia.bloodapp.ActivityBasicDetails"
+            android:label="@string/title_basic_details"
+            android:screenOrientation="portrait"
+            android:parentActivityName="in.donatebloodindia.bloodapp.MainActivity" >
+
+        </activity>
+
+        <activity
+            android:name="in.donatebloodindia.bloodapp.HomeMainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_home_main" >
+        </activity>
+
+        <activity
+            android:name="in.donatebloodindia.bloodapp.ActivityMyProfileDetails"
+            android:screenOrientation="portrait"
+            android:label="My Blood donation" >
+        </activity>
+
+        <activity
+            android:name="in.donatebloodindia.bloodapp.ActivitySearchDonorResults"
+            android:screenOrientation="portrait"
+            android:label="@string/search_results" >
+        </activity>
+
+        <activity
+            android:name="in.donatebloodindia.bloodapp.ActivitySearchBloodBankResults"
+            android:screenOrientation="portrait"
+            android:label="@string/search_results" >
+        </activity>
+
+        <activity
+            android:name="in.donatebloodindia.bloodapp.Recievenotifications"
+            android:screenOrientation="portrait"
+            android:label="Notifications" >
+        </activity>
+
+        <activity
+            android:name="in.donatebloodindia.bloodapp.SettingsActivity"
+            android:label="@string/settings_pagename" >
+            android:screenOrientation="portrait"
+            <intent-filter>
+                <action android:name="android.intent.action.settingsactivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>
+
+
+

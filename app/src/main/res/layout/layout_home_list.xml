@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:background="#fEfEEE"
+    android:minHeight="160dp">
+
+    <TextView
+        android:id="@+id/title_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Large Text"
+        android:layout_margin="10dp"
+
+        android:textColor="@color/Black_color"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/description_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title_message"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/Black_color"
+        android:layout_margin="5dp"
+        android:gravity="center_horizontal"
+        android:text="Small Text  mall Textmall Textmall Textmall Text a sfkj aklf alkd falk dlfkas mall Textvmall Text afasldkfjakls flks kldsj flkds "
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/donate_button_annoucement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description_message"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:minEms="5"
+        android:background="@drawable/button_custom"
+        android:text="Donate"
+
+
+        />
+
+</RelativeLayout>

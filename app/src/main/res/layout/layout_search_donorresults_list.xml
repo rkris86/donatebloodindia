@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/White_color"
+    android:minHeight="135dp">
+
+    <TextView
+        android:id="@+id/search_donorresults_mobilenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/search_donorresults_donorname"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/Black_color"
+        android:layout_margin="4dp"
+        android:gravity="left"
+        android:text="Mobile Number"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/search_donorresults_citylocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/search_donorresults_mobilenumber"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/Black_color"
+        android:layout_margin="4dp"
+        android:gravity="center_horizontal"
+        android:text="subcity "
+        android:layout_marginBottom="6dp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/searchdonor_buttoncontainer" >
+
+
+        <Button
+            android:id="@+id/search_donorresults_message_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:layout_below="@+id/search_donorresults_citylocation"
+            android:minEms="4"
+            android:text="Message"
+            android:background="@drawable/button_custom"
+            android:layout_margin="5dp"
+            android:textColor="@color/White_color" />
+
+        <Button
+            android:id="@+id/search_donorresults_call_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search_donorresults_citylocation"
+            android:minEms="5"
+            android:text="Call"
+            android:layout_weight="1"
+            android:background="@drawable/button_custom"
+            android:layout_margin="5dp"
+            android:textColor="@color/White_color" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/search_donorresults_donorname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="4dp"
+        android:gravity="center_horizontal"
+        android:text="Donor Name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/Black_color" />
+
+</RelativeLayout>

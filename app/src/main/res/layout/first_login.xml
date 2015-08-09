@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background_color" >
+
+
+    <Button
+        android:id="@+id/login_button_firstlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/donor_password_firstlogin"
+        android:layout_alignRight="@+id/donor_password_firstlogin"
+        android:layout_below="@+id/donor_password_firstlogin"
+        android:layout_marginTop="44dp"
+        android:text="Login"
+        android:textColor="@color/Black_color"
+        android:background="@drawable/button_custom"
+        android:onClick="login_firstlogin" />
+
+    <EditText
+        android:id="@+id/donor_login_firstlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="93dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Username"
+        android:inputType="phone"
+        android:textColor="@color/White_color"
+        android:textColorHint="@color/White_color"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/donor_password_firstlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/donor_login_firstlogin"
+        android:layout_below="@+id/donor_login_firstlogin"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/White_color"
+        android:textColorHint="@color/White_color" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/register_button_firstlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/login_button_firstlogin"
+        android:layout_alignRight="@+id/login_button_firstlogin"
+        android:layout_below="@+id/login_button_firstlogin"
+        android:layout_marginTop="12dp"
+        android:onClick="register_firstlogin"
+        android:textColor="@color/Black_color"
+        android:background="@drawable/button_custom"
+        android:text="Register" />
+
+    <TextView
+        android:id="@+id/WelcometoBloodApptextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Welcome to Blood App"
+        android:textColor="@color/White_color"
+        android:layout_marginTop="40sp"
+        android:gravity="center_horizontal"
+        android:autoText="false"
+        android:layout_centerVertical="false"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
+
+
+

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainlinearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background_color"
+    android:paddingTop="20dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/donor_first_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:ems="8"
+        android:hint="@string/donor_first_name_hint"
+        android:maxLength="80"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/White_color"
+        android:textColorHint="@color/White_color" />
+
+    <EditText
+        android:id="@+id/donor_last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:ems="10"
+        android:textColor="@color/White_color"
+        android:textColorHint="@color/White_color"
+        android:singleLine="true"
+        android:hint="@string/donor_last_name_hint" >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/donor_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:maxLength="10"
+        android:ems="10"
+        android:textColor="@color/White_color"
+        android:textColorHint="@color/White_color"
+        android:inputType="phone"
+        android:hint="@string/donor_mobile_hint" />
+
+    <Spinner
+        android:id="@+id/donor_blood_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:ems="10"
+        android:textColor="@color/Black_color"
+        android:textColorHint="@color/Black_color"
+        android:entries="@array/donor_blood_group"
+        android:prompt="@string/donor_blood_choose"
+        android:spinnerMode="dialog"/>
+
+    <Spinner
+        android:id="@+id/donor_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="8dp"
+        android:ems="10"
+        android:entries="@array/donor_sex"
+        android:prompt="@string/donor_sex_choose"
+        android:spinnerMode="dialog"
+        android:textColor="@color/Black_color"
+        android:textColorHint="@color/Black_color" />
+
+    <Spinner
+        android:id="@+id/donor_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:ems="10"
+        android:textColor="@color/Black_color"
+        android:textColorHint="@color/Black_color"
+        android:entries="@array/donor_city"
+        android:prompt="@string/donor_city_choose"
+        android:spinnerMode="dialog"
+        />
+
+    <Spinner
+        android:id="@+id/donor_subcity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:ems="8"
+        android:spinnerMode="dialog"
+        android:textColor="@color/Black_color"
+        android:textColorHint="@color/Black_color" />
+
+    <Button
+        android:id="@+id/donor_register_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Register Now"
+        android:background="@drawable/button_custom"
+        android:textColor="@color/Black_color"
+        android:onClick="donorRegister"
+
+        />
+</LinearLayout>

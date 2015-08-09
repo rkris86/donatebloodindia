@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+<string-array name="listentries">
+    <item>Mumbai</item>
+    <item>Hyderabad</item>
+    <item>Bangalore</item>
+    <item>Delhi</item>
+    <item>Chennai</item>
+
+</string-array>
+
+
+<string-array name="mumbaisubcities">
+    <item>South Mumbai</item>
+    <item>Western Suburbs</item>
+    <item>Central Suburbs</item>
+    <item>Thane and Beyond</item>
+    <item>Navi Mumbai</item>
+    <item>Dahisar and Beyond</item>
+
+</string-array>
+
+
+<string-array name="delhisubcities">
+    <item>New Delhi</item>
+    <item>South Delhi</item>
+    <item>East Delhi</item>
+    <item>North Delhi</item>
+    <item>West Delhi</item>
+    <item>Gurgaon</item>
+
+</string-array>
+
+<string-array name="hyderabadsubcities">
+    <item>West Hyderabad</item>
+    <item>North Hyderabad</item>
+    <item>East Hyderabad</item>
+    <item>Central Hyderabad</item>
+    <item>South Hyderabad</item>
+    <item>Outer Hyderabad</item>
+
+</string-array>
+
+<string-array name="bangalaloresubcities">
+    <item>South Bangalore</item>
+    <item>North Bangalore</item>
+    <item>West Bangalore</item>
+    <item>Central Bangalore</item>
+    <item>East Bangalore</item>
+    <item>Outer Bangalore</item>
+</string-array>
+
+<string-array name="chennaisubcities">
+    <item>South chennai</item>
+    <item>North chennai</item>
+    <item>West chennai</item>
+    <item>East chennai</item>
+    <item>Central chennai</item>
+    <item>Outer chennai</item>
+
+</string-array>
+
+<string-array name="settings_listview_items">
+    <item>Change Password</item>
+    <item>Change City/Sub City</item>
+    <item>Delete Account</item>
+
+</string-array>
+
+<string-array name="listvalues">
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+    <item>6</item>
+</string-array>
+
+
+<string-array name="donor_sex">
+    <item>Male</item>
+    <item>Female</item>
+
+</string-array>
+
+<string-array name="recievenotifications">
+    <item>Notification</item>
+
+</string-array>
+</resources>

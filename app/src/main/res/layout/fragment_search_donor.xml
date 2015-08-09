@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F95555" >
+
+    <Spinner
+        android:id="@+id/search_donor_city_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:textColor="#ddd"
+        android:textColorHint="#aaa"
+        android:entries="@array/donor_city"
+        android:prompt="@string/donor_city_choose"
+        android:spinnerMode="dropdown"
+
+        />
+
+    <Spinner
+        android:id="@+id/search_donor_blood_group_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:textColor="#ddd"
+        android:textColorHint="#aaa"
+        android:entries="@array/donor_blood_group"
+        android:prompt="@string/donor_blood_choose"
+        android:spinnerMode="dialog"/>
+
+    <Button
+        android:id="@+id/search_donor_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="Search Donors"
+        android:background="@drawable/button_custom"
+
+
+        />
+
+</LinearLayout>

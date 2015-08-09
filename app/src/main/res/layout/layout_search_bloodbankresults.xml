@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/White_color"
+    android:minHeight="120dp">
+
+    <TextView
+        android:id="@+id/search_bloodbankresults_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/search_bloodbankresults_bloodbankname"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/Black_color"
+        android:layout_margin="5dp"
+        android:gravity="left"
+        android:text="Address of the bank "
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/search_bloodbankresults_call_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/search_bloodbankresults_description"
+        android:layout_margin="5dp"
+        android:background="@drawable/button_custom"
+        android:minEms="5"
+        android:text="Call"
+        android:textColor="@color/Black_color" />
+
+    <TextView
+        android:id="@+id/search_bloodbankresults_bloodbankname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:gravity="left"
+        android:text="Blood Bank"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/Black_color" />
+
+</RelativeLayout>
